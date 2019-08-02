@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/custom.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyPAGE</title>
+</head>
+
+<body>
+
+    <div class="hero-image">
+        <div class="navbar-fixed transparent">
+            <nav class="grey lighten-4">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo " style="margin-top: -15px"><img src="img/logo.png" height="90px" alt=""></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="#">HOME</a></li>
+                        <li><a class="dropdown-button" data-target="dropdown_home" href="#">SOBRE
+                                <i class="material-icons right">keyboard_arrow_down</i> </a></li>
+                        <li><a href="#">PORTIFOLIO</a></li>
+                        <li><a href="#"> <i class="material-icons left">phone</i> CONTATO</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!--CARDS-->
+        <div class="row container" style="margin-top:90px; ">
+            <div class="col s12 m12 l12" >
+                <div class="carousel carousel-slider center"  style="height:500px">
+                    <div class="carousel-fixed-item center" >
+                        <a class="btn waves-effect white grey-text darken-text-2">TAKE A LOOK!</a>
+                    </div>
+                    <div class="carousel-item white-text" href="#one!" style="background-color:rgba(70, 70, 70, 0.185)">
+                        <h2>KITCHENS</h2>
+                        <p class="white-text">Do you like kitchen stuffs? Our products are made for you! </p>
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="carousel-item white-text" href="#two!" style="background-color:rgba(70, 70, 70, 0.185)">
+                        <h2>VINTAGE ROOMS</h2>
+                        <p class="white-text">Do you like vintage espaces?? Our products are made for you! </p>
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item white-text" href="#three!" style="background-color:rgba(70, 70, 70, 0.185)">
+                        <h2>MODERN ROOMS</h2>
+                        <p class="white-text">Do you like modern rooms? Our products are made for you! </p>
+                        <img src="img/3.jpg" alt="">
+                    </div>
+                    <div class="carousel-item white-text" href="#four!" style="background-color:rgba(70, 70, 70, 0.185)">
+                        <h2>BEDROOM</h2>
+                        <p class="white-text">Do you like fluffy bedrooms? Our products are made for you! </p>
+                        <img src="img/4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--DROPDOWN STRUCTURE-->
+    <ul id='dropdown_home' class='dropdown-content'>
+        <li><a href="#!" class="center grey-text text-darken-1">História</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!" class="center grey-text text-darken-1">Missão</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!" class="center grey-text text-darken-1">Visão</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!" class="center grey-text text-darken-1">Valores</a></li>
+    </ul>
+
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <script>
+        //DROPDOWN HOME
+        $('.dropdown-button').dropdown({
+            hover: true,
+            coverTrigger: false
+        });
+        //CAROUSEL
+        $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+        });
+    </script>
+</body>
+
+</html>

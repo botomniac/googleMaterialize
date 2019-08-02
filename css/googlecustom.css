@@ -1,0 +1,14 @@
+﻿body{
+   font-family: 'arial', sans-serif;
+   letter-spacing: -0.5px;
+   font-size: 14px
+}
+
+#div-input{width: 600px}
+@media(max-width: 860px){
+    #div-input{
+        width: 85%;
+    }
+}
+
+.nav-wrapper li:hover, .footer-copyright a:hover{text-decoration: underline}

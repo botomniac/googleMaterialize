@@ -1,0 +1,22 @@
+﻿.hero-image{
+    background-image: url(../img/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 900px;
+}
+.nav-wrapper{
+    background-color: #ffffff00;
+}
+
+.hero-image a{
+    color: rgb(90, 90, 90);
+    
+}
+
+div #carousel-master{
+    color: aqua;
+}
+/*----------------hovers-----------*/
+#dropdown_home li a{color: red;}
